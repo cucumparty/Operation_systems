@@ -73,22 +73,22 @@ int flag_func(DIR* file, int argc, char** argv, int flag_a, int flag_l, int flag
 
                 switch(flag_a + flag_l + flag_R)
                 {
-                case 0: if(argc == 2)
+                case 0: if(argc < 3)
                                 file = opendir(".");
                         else
                                 file = opendir(argv[optind + 1]);
                         break; 
-                case 1: if(argc == 3)
+                case 1: if(argc < 4)
                                 file = opendir(".");
                         else
                                 file = opendir(argv[optind + 1]);
                         break;
-                case 2: if(argc == 4)
+                case 2: if(argc < 5)
                                 file = opendir(".");
                         else
                                 file = opendir(argv[optind + 1]);
                         break;
-                case 3: if(argc == 5)
+                case 3: if(argc < 6)
                                 file = opendir(".");
                         else
                                 file = opendir(argv[optind + 1]);
