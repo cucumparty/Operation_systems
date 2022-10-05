@@ -46,7 +46,7 @@ int main(int argc, char** argv)
     }
 
     func(f_help, flag_h, flag_v, flag_f, flag_i, flag_p, 
-          f1, f2, f2_read,  s, help, argv[optind + 1], argv[optind + 2]);
+          f1, f2, f2_read,  s, help, argv[optind], argv[optind + 1]);
     
     fclose(f1);
     fclose(f2);
