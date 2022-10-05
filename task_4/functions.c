@@ -6,7 +6,7 @@ int func(FILE* f_help, int flag_h, int flag_v, int flag_f, int flag_i, int flag_
 
     f1 = fopen(f1_name, "r");
     f2_read = fopen(f2_name, "r");
-    f2 = fopen(f2_name, "r");
+    f2 = fopen(f2_name, "w");
 
     if(flag_h == 1)
     {
